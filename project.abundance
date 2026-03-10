@@ -108,7 +108,7 @@
       "start": {
         "x": 7,
         "y": 0,
-        "z": 0
+        "z": 5
       },
       "end": {
         "x": 7,
@@ -116,7 +116,7 @@
         "z": 10
       },
       "text": "label",
-      "color": "#F3EFEF"
+      "color": "#484848"
     }
   ],
   "allConnectors": [
