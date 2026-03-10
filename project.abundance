@@ -32,8 +32,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.37829293993677554,
-      "y": 0.3433734939759036,
+      "x": 0.38250790305584825,
+      "y": 0.3463855421686747,
       "uniqueID": "id-7",
       "ioValues": [
         {
@@ -48,8 +48,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.6354056902002108,
-      "y": 0.3072289156626506,
+      "x": 0.6332982086406744,
+      "y": 0.3132530120481927,
       "uniqueID": "id-11",
       "ioValues": [
         {
@@ -72,8 +72,8 @@
     },
     {
       "atomType": "Rotate",
-      "x": 0.7755532139093783,
-      "y": 0.39759036144578314,
+      "x": 0.7829293993677555,
+      "y": 0.40361445783132527,
       "uniqueID": "id-17",
       "ioValues": [
         {
@@ -96,8 +96,8 @@
     },
     {
       "atomType": "Label",
-      "x": 0.5142255005268704,
-      "y": 0.45783132530120485,
+      "x": 0.5131717597471023,
+      "y": 0.4006024096385542,
       "uniqueID": "id-23",
       "ioValues": [
         {
@@ -108,7 +108,7 @@
       "start": {
         "x": 10,
         "y": 0,
-        "z": 3
+        "z": 5
       },
       "end": {
         "x": 6,
@@ -120,8 +120,8 @@
     },
     {
       "atomType": "Tag",
-      "x": 0.7513171759747101,
-      "y": 0.75,
+      "x": 0.8314014752370916,
+      "y": 0.7108433734939759,
       "uniqueID": "id-54",
       "ioValues": [
         {
@@ -134,39 +134,76 @@
       ]
     },
     {
-      "atomType": "Gcode",
-      "x": 0.6375131717597471,
-      "y": 0.7108433734939759,
-      "uniqueID": "id-77",
+      "atomType": "Assembly",
+      "x": 0.6469968387776607,
+      "y": 0.7620481927710844,
+      "uniqueID": "id-106",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "Label",
+      "x": 0.5184404636459431,
+      "y": 0.7078313253012049,
+      "uniqueID": "id-110",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "start": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "end": {
+        "x": 10,
+        "y": 10,
+        "z": 0
+      },
+      "text": "label",
+      "color": "#F3EFEF"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.3804004214963119,
+      "y": 0.8463855421686747,
+      "uniqueID": "id-113",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 10
+        },
+        {
+          "name": "y length",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.4678609062170706,
+      "y": 0.8765060240963856,
+      "uniqueID": "id-117",
       "ioValues": [
         {
           "name": "geometry",
           "ioValue": "__GEOMETRY_INPUT__"
         },
         {
-          "name": "Tool Size",
-          "ioValue": 6.35
-        },
-        {
-          "name": "Passes",
-          "ioValue": 1
-        },
-        {
-          "name": "Speed",
-          "ioValue": 1500
-        },
-        {
-          "name": "Cut Through",
-          "ioValue": 0
-        },
-        {
-          "name": "Part Name",
-          "ioValue": "test_march4th",
-          "currentEquation": "test_march4th"
+          "name": "height",
+          "ioValue": 10
         }
-      ],
-      "partName": "test_march4th",
-      "sortDirection": "Left"
+      ]
     }
   ],
   "allConnectors": [
@@ -196,14 +233,29 @@
       "ap2ID": "id-54"
     },
     {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-17",
+      "ap2ID": "id-106"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-23",
       "ap2ID": "id-11"
     },
     {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-110",
+      "ap2ID": "id-106"
+    },
+    {
       "ap2Name": "geometry",
-      "ap1ID": "id-23",
-      "ap2ID": "id-77"
+      "ap1ID": "id-113",
+      "ap2ID": "id-117"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-117",
+      "ap2ID": "id-110"
     }
   ],
   "unitsKey": "MM",
