@@ -72,8 +72,8 @@
     },
     {
       "atomType": "Rotate",
-      "x": 0.7734457323498419,
-      "y": 0.3614457831325301,
+      "x": 0.7755532139093783,
+      "y": 0.39759036144578314,
       "uniqueID": "id-17",
       "ioValues": [
         {
@@ -96,8 +96,8 @@
     },
     {
       "atomType": "Label",
-      "x": 0.5395152792413066,
-      "y": 0.4879518072289156,
+      "x": 0.5142255005268704,
+      "y": 0.45783132530120485,
       "uniqueID": "id-23",
       "ioValues": [
         {
@@ -106,7 +106,7 @@
         }
       ],
       "start": {
-        "x": 6,
+        "x": 10,
         "y": 0,
         "z": 3
       },
@@ -115,7 +115,7 @@
         "y": 0,
         "z": 10
       },
-      "text": "label",
+      "text": "leaf",
       "color": "#F3EFEF"
     },
     {
@@ -132,6 +132,41 @@
       "tags": [
         ""
       ]
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.6375131717597471,
+      "y": 0.7108433734939759,
+      "uniqueID": "id-77",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Tool Size",
+          "ioValue": 6.35
+        },
+        {
+          "name": "Passes",
+          "ioValue": 1
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "test_march4th",
+          "currentEquation": "test_march4th"
+        }
+      ],
+      "partName": "test_march4th",
+      "sortDirection": "Left"
     }
   ],
   "allConnectors": [
@@ -164,6 +199,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-23",
       "ap2ID": "id-11"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-23",
+      "ap2ID": "id-77"
     }
   ],
   "unitsKey": "MM",
